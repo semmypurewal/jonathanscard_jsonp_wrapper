@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jonathans Card JSONP example</title>
+  </head>
+
+  <body>
+    <p>This is an example of using <a href="http://en.wikipedia.org/wiki/JSONP">jsonp</a> to access jonathan's card API.  Go ahead, take a look at the source!</p>
+
+    <script>
+function jsonpcallback(latest)  {
+    alert("the current value of jonathan's card is " + latest.balance.amount_formatted);
+}
+    </script>
+
+    <script type="text/javascript" src="http://jonathanscard.cloudfoundry.com/api/latest?callback=jsonpcallback"></script>
+  </body>
+
+</html>

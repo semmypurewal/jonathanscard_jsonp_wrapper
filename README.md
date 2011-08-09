@@ -1,0 +1,1 @@
+A sinatra application that wraps the 'jonathan's card' API to allow for jsonp requests
